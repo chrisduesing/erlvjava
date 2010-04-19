@@ -1,15 +1,15 @@
 %%%-------------------------------------------------------------------
-%%% @author Chris Duesing <chrisduesing@Chris-Duesings-MacBook-Pro.local>
+%%% @author Chris Duesing <chris.duesing@gmail.com>
 %%% @copyright (C) 2010, Chris Duesing
 %%% @doc
 %%%
 %%% @end
-%%% Created : 18 Apr 2010 by Chris Duesing <chrisduesing@Chris-Duesings-MacBook-Pro.local>
+%%% Created : 18 Apr 2010 by Chris Duesing <chris.duesing@gmail.com>
 %%%-------------------------------------------------------------------
--module(case_example).
+-module(processes).
 
 %% API
--export([example/0]).
+-export([]).
 
 %%%===================================================================
 %%% API
@@ -20,18 +20,6 @@
 %% @spec
 %% @end
 %%--------------------------------------------------------------------
-example() ->
-
-    X = "Chris",
-    case X of
-	"Chris" ->
-	    io:format("Hey Chris!~n");
-	SomeoneElse ->
-	    io:format("Hey, ~s have you Seen Chris?~n", [SomeoneElse]);
-	_ ->
-	    error
-    end.
-
 
 %%%===================================================================
 %%% Internal functions
