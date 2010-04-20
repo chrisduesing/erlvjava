@@ -29,16 +29,33 @@ single_assignment() ->
 
 lists() ->
     
-    [1, 2, 3],
+    L = [1, 2, 3],
+
+    io:format("~p~n", [L]),
+
+
+    
+    X = lists:nth(2, L),
+
+    io:format("2nd element is ~w~n", [X]),
+    
+
 
     [A, B, C] = [1, 2, 3],
+
     io:format("B equals ~p~n", [B]),
+
+
     
     [Head | Tail] = [1, 2, 3],
+
     io:format("Head equals ~p~n", [Head]),
     io:format("Tail equals ~p~n", [Tail]),
 
+
+
     [H | T] = "Hello World",
+
     io:format("head equals ~p~n", [H]), 
     io:format("tail equals ~p~n", [T]).
 
